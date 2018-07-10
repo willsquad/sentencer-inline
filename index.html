@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>
+            Sentencer
+        </title>
+        <link rel="stylesheet" href="files/css/bootstrap.css">
+        <link rel="stylesheet" href="files/css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans:300,400,600,700|Roboto+Slab" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    </head>
+<body>
+    <!-- START OF MAIN CONTAINER FLUID -->
+    <div class="container-fluid">
+        <!-- START OF MAIN ROW -->
+        <div class="row">
+            <!-- Header -->
+            <div id="header" class="col-12">
+                <div class="row">
+                    <div id="main_header" class="col-12 d-flex align-items-center">
+                        <div class="main_header_container max_width d-flex align-items-center justify-content-between">
+                            <div class="logo"><a href="index.html"><i class="material-icons">edit</i> Sentencer</a></div>
+                
+                            <div class="menu_rhs ">
+                                <div class="text hidden-xs-up">
+                                    <i class="material-icons">favorite_border</i>
+                                </div>
+                                <div class="text hidden-xs-up">Log In</div>
+                                <div class="button"><a href="#">Logout</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Header -->
+
+            <!-- Content -->
+            <div id="content" class="max_width col-12">
+                <div class="row">
+                    <div id="text_input" class="col-12">
+                        <div id="textarea_input" class="textarea" id="" placeholder="Enter the text here..." contenteditable="true"></div>
+
+                        <div class="inline_suggestions">
+                            <div class="word_container_expanded">
+                                <span class="word" id="selected_word">healthy</span>
+                            </div>
+
+                            <div class="synonym_container">
+                                <span class="synonym">hale and hearty</span>
+                                <span class="synonym">fine</span>
+                                <span class="synonym">sound</span>
+                                <span class="synonym">tip-top</span>
+                                <span class="synonym">fit</span>
+                                <span class="synonym">robust</span>
+                                <span class="synonym">sturdy</span>
+                                <span class="synonym">strong</span>
+                                <span class="synonym">vigorous</span>
+                            </div>
+                        </div>
+
+                        <div class="copy_to_clipboard">
+                            <button class="text_input_button copy_button">Copy</button>
+                            <button class="text_input_button cancel_button">Clear</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Content -->
+        </div>
+        <!-- END OF MAIN ROW -->
+    </div>
+    <!-- END OF MAIN CONTAINER FLUID -->
+</body>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="files/js/main.js"></script>
+
+</html>
