@@ -38,7 +38,13 @@ $(document).ready(function() {
                         "left": "" + cursor_x + "px"
                     });
 
-                    $('#selected_word').html(selText);
+
+                    if(selText.split(' ').length == 1) { // One word
+                        $('#selected_word').text(selText);
+                    } else {
+                        $('#selected_word').text("happy");
+                    }
+                    
     
                 } else {
                     $('.inline_suggestions').removeClass('active');
@@ -57,7 +63,11 @@ $(document).ready(function() {
                         "left": "" + cursor_x + "px"
                     });
 
-                    $('#selected_word').html(selText);
+                    if(selText.split(' ').length == 1) { // One word
+                        $('#selected_word').text(selText);
+                    } else {
+                        $('#selected_word').text("happy");
+                    }
     
                 } else {
     
